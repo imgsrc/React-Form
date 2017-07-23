@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900";
+
+.app {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.signup-form {
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mdc-textfield {
+  margin-bottom: 1em;
+}
+
+.mdc-textfield__input {
+  width: 100%;
+}
+
+.fade-appear {
+  margin-top: 30px;
+  opacity: .01;
+}
+
+.fade-appear.fade-appear-active {
+  margin-top: 0px;
+  opacity: 1;
+  transition: opacity .5s ease, margin .5s ease;
+}
+
+.fade-leave {
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  margin-top: -30px;
+  opacity: .01;
+  transition: opacity .3s ease, margin .5s ease;
+}
